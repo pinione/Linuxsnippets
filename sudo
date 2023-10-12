@@ -1,0 +1,2 @@
+#sudo sed --in-place -e '/^sudo-user/s/NOEXEC://' /etc/sudoers
+#sudo sed --in-place -e 's/noexec//g' /etc/sudoers
