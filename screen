@@ -7,3 +7,9 @@ Exist scrolling/copy mode: esc esc
 
 #Create new screen with name
 screen -S <screen name>
+
+#Windows
+Create new window:  Ctr-a c
+See window list:  Ctr-a "
+Rename current window:  Ctrl-a A
+Change to last-visited window:   Ctrl-a Ctrl-a
