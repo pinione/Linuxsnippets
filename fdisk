@@ -1,0 +1,1 @@
+fdisk -l |sed -e '/Disk \/dev\/loop/,+5d'
