@@ -14,5 +14,5 @@ See window list:  Ctr-a "
 Rename current window:  Ctrl-a A
 Change to last-visited window:   Ctrl-a Ctrl-a
 
-#Rename existing session
-Ctr-a :sessionname <newName>
+#Sessions
+Rename existing session: Ctr-a :sessionname <newName>
