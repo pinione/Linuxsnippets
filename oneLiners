@@ -1,0 +1,2 @@
+#Shutdown Linux once it will download all
+while [ $(count=$(ls -1 *.crdownload 2>/dev/null | wc -l); echo $count) -gt 0 ]; do echo "Number of .crdownload files: $count"; sleep 60; done && echo "No .crdownload files found. Shutting down..." && sudo shutdown -h now
