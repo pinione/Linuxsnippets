@@ -1,0 +1,5 @@
+always on top:
+b@dell7400-2in1:~$ dconf read /org/gnome/desktop/wm/keybindings/always-on-top
+['<Super><Control>t']
+
+dconf write /org/gnome/desktop/wm/keybindings/always-on-top "['<Super><Control>t']"
