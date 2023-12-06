@@ -1,0 +1,3 @@
+# when steamOS is no longer available:
+ `sudo efibootmgr -c -L "SteamOS" -l "\EFI\steamos\steamcl.efi" -d /dev/nvme0n1p1 -b0001` 
+# (assuming 0001 isn't in use, check `efibootmgr` first)
