@@ -1,0 +1,6 @@
+#MacOS
+pbcopy, pbpaste
+#Linux X-window
+xsel
+#Linux Wayland -> wlclipboarsd
+wl-copy, wl-paste 
