@@ -1,5 +1,7 @@
 sudo apt install paprefs
 sudo apt install pavucontrol
+#apple air play
+sudo apt install pulseaudio-module-raop
 
 #fix paprefs on Ubuntu
 # create symlink in /usr/lib from pulse-15.99.1+dfsg1 to pulse-15.99
