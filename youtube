@@ -1,2 +1,4 @@
+#!/bin/bash
 #youtube thumbnail
-http://img.youtube.com/vi/youtube-video-id/maxresdefault.jpg
+#http://img.youtube.com/vi/youtube-video-id/maxresdefault.jpg
+wget http://img.youtube.com/vi/${1}/maxresdefault.jpg
