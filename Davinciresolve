@@ -1,0 +1,2 @@
+#Davinci resolve on Ubuntu with integrated GPU
+sudo apt install clinfo ocl-icd-libopencl1 intel-opencl-icd
