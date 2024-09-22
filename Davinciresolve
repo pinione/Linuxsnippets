@@ -1,2 +1,9 @@
+#doesn't start in ubuntu 24.04
+cd /opt/resolve/libs
+sudo mkdir disabled-libraries
+sudo mv libglib* disabled-libraries
+sudo mv libgio* disabled-libraries
+sudo mv libgmodule* disabled-libraries
+
 #Davinci resolve on Ubuntu with integrated GPU
 sudo apt install clinfo ocl-icd-libopencl1 intel-opencl-icd
