@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# Script to download all video thumbnails from a specified YouTube channel
+# Usage:
+#   ./download_thumbnails.sh "https://www.youtube.com/channel/CHANNEL_ID" 
+# or
+#   ./download_thumbnails.sh "https://www.youtube.com/@ChannelUsername"
+
+CHANNEL_URL="$1"
+
+# Check if channel URL was provided
+if [ -z "$CHANNEL_URL" ]; then
+  echo "Usage: $0 <channel_url>"
+  echo "Example: $0 \"https://www.youtube.com/c/SomeChannel/videos\""
+  exit 1
+fi
+
+# Create an output folder just for thumbnails (optional)
+OUTPUT_FOLDER="thumbnails"
+mkdir -p "$OUTPUT_FOLDER"
+
+# Use yt-dlp to download only thumbnails
+# --skip-download    => Do not download video
+# --write-thumbnail  => Write thumbnail file
+# --write-all-thumbnails => (optional) In case you want all thumbnail versions
+# -o "%(title)s.%(ext)s" => File naming pattern
+# -ci                => Continue on errors, ignore warnings
+
+yt-dlp \
+  --skip-download \
+  --write-thumbnail \
+  --no-warnings \
+  --ignore-errors \
+  --output "${OUTPUT_FOLDER}/%(upload_date)s - %(title).200s.%(ext)s" \
+  "$CHANNEL_URL"
