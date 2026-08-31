@@ -7,3 +7,6 @@ sudo mv libgmodule* disabled-libraries
 
 #Davinci resolve on Ubuntu with integrated GPU
 sudo apt install clinfo ocl-icd-libopencl1 intel-opencl-icd
+
+#Omarchy
+#sudo pacman -S clinfo ocl-icd intel-compute-runtime
